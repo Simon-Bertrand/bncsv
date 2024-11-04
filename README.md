@@ -65,8 +65,9 @@ Let's start by showing the help command with :
 
 ```bash
 bncsv # The same as 'bncsv --help'
+```
+```
 >> Usage: bncsv.exe [<paths...>] -i <input-type> [-o <output>] [--abs-pathbase <abs-pathbase>] [-p] [-j <jobs>]
-
 BNCSV Format CLI Tool
 
 Positional Arguments:
