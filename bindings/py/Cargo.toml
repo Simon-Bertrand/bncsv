@@ -1,0 +1,24 @@
+[package]
+name = "bncsv_py"
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+keywords.workspace = true
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = { workspace = true }
+bncsv-core = { workspace = true, features = [] }
+
+
+
+[lib]
+# See https://github.com/PyO3/pyo3 for details
+name = "rs_api"  # private module to be nested into Python package
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+

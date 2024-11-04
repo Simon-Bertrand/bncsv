@@ -1,0 +1,6 @@
+**/*.egg-info
+target
+build
+.nox
+.pytest_cache
+**/__pycache__

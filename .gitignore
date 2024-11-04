@@ -1,0 +1,7 @@
+**/target
+**/.vscode
+**/.venv
+**/.pytest_cache
+**/__pycache__
+**/*debug*.ipynb
+**/build

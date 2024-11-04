@@ -1,0 +1,27 @@
+
+[workspace.package]
+#name = "bncsv"
+version = "0.1.0"
+edition = "2021"
+description = ""
+repository = "https://github.com/Simon-Bertrand/BinaryNumericalCSV"
+keywords = ["bncsv"]
+
+[workspace]
+members = [
+  "bindings/py",
+  "bncsv-core"
+]
+resolver = "2"
+
+
+
+[workspace.dependencies]
+bncsv-core = { path = "./bncsv-core"}
+pyo3 = {version = "0.22.5"}
+argh = "0.1.12"
+glob = { version = "0.3.1"}
+
+[profile.release-lto]
+inherits = "release"
+lto = true
